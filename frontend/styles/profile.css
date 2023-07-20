@@ -1,0 +1,29 @@
+.image{
+  position:relative;
+  overflow:hidden;
+  padding-bottom:100%;
+}
+.image img{
+  position:absolute;
+}
+
+.custom-size-img {
+  float: left;
+  width:  200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.post img {
+  transition: transform 0.3s;
+}
+
+.post img:hover {
+  transform: scale(1.6);
+  display: block;
+  margin: 0 auto;
+}
+
+#loader {
+  display: none;
+}

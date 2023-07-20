@@ -1,0 +1,151 @@
+#preview {
+  transition: filter 0.3s;
+}
+
+#preview:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+}
+
+.postimage {
+  transition: filter 0.3s;
+}
+
+.postimage:hover {
+  filter: brightness(70%);
+  cursor: pointer;
+}
+
+.preview-image {
+  max-width: 150px;
+  max-height: 150px;
+  margin-top: 10px;
+}
+
+.custom-bg-css {
+  background-color: rgba(0, 0, 0, 0.128);
+  padding: 5px;
+  width: 50%;
+}
+
+.custom-size-img {
+  float: left;
+  width: 100px;
+  height: 700px;
+  object-fit: cover;
+}
+#raceContainerWrapper {
+  width: 100%;
+  height: 130px;
+  overflow: hidden;
+  position: relative;
+}
+
+#racesContainer {
+  display: flex;
+  animation: scrollRaceContainer 35s linear infinite;
+  white-space: nowrap;
+  position: absolute;
+  left: 100%; /* Altera o valor da posição inicial para que o elemento comece fora da tela */
+}
+
+.raceItem {
+  margin-right: 10px; /* Adicione a margem desejada entre as corridas */
+}
+
+.custom-audio-player {
+  margin-top: 10px;
+}
+
+.audio-controls {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.play-pause-button {
+  width: 30px;
+  height: 30px;
+  background-color: #1c2433;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.play-pause-button:hover {
+  background-color: #2f3d51;
+}
+
+.play-pause-button i {
+  color: white;
+}
+
+.progress-bar {
+  flex: 1;
+  height: 5px;
+  background-color: #2f3d51;
+  margin-left: 10px;
+  position: relative;
+}
+
+.progress-bar-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: #1c2433;
+  transition: width 0.2s ease;
+}
+
+#audioPlayer {
+  display: none;
+}
+
+#resetButton {
+  width: 30px;
+  height: 30px;
+  background-color: #1c2433;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#resetButton:hover {
+  background-color: #2f3d51;
+}
+
+#resetButton {
+  color: white;
+}
+
+.scroll-list {
+  height: 200px; /* Defina a altura desejada para a lista */
+  overflow: auto;
+}
+
+@keyframes scrollRaceContainer {
+  0% {
+    transform: translateX(0); /* Altera o valor inicial para 0 */
+  }
+  100% {
+    transform: translateX(-100%); /* Altera o valor final para -100% */
+  }
+}
+
+.profile {
+  background-color: #FF0000; /* Replace with your desired color */
+  /* Add any other styles you want for the button */
+}
+
+.profile:hover,
+.profile:focus {
+  background-color: #990000; /* Replace with the darker shade you want */
+  /* Add any other styles you want for the hovered or focused state */
+}
