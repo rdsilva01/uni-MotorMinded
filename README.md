@@ -1,2 +1,2 @@
-# motor-minded-demo
+# motor-minded
  website demo
