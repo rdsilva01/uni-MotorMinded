@@ -4,6 +4,4 @@ This project was initially created as a school project. However, I decided to in
 The website is a simple motoring enthusiasts' forum. Users can create accounts and post photos.
 
 The website is built using the following technologies:
-PHP
-JavaScript
-MySQL
+PHP, JavaScript, MySQL
